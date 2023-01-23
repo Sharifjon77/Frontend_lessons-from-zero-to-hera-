@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1b3764;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.d-flex, .pages_header .header_content .container .header_category .category_left .btn_group, .pages_header .header_content .container .header_category, .pages_header .navbar .nav_container .nav_right .nav_collapse, .pages_header .navbar .nav_container .nav_left .icon_group, .pages_header .navbar .nav_container .nav_left, .pages_header .navbar .nav_container {
+  display: flex;
+  align-items: center;
+}
+
+.d-center, .pages_header .navbar .nav_container .nav_left .icon_group .white_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pages_header .navbar {
+  position: fixed;
+  width: 100%;
+}
+.pages_header .navbar .nav_container {
+  max-width: 1300px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.pages_header .navbar .nav_container .nav_left .nav_logo {
+  width: 119px;
+  height: 35px;
+  margin-right: 25px;
+}
+.pages_header .navbar .nav_container .nav_left .icon_group .white_box {
+  width: 45px;
+  height: 45px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  margin-left: 10px;
+}
+.pages_header .navbar .nav_container .nav_right .nav_collapse .nav_item {
+  list-style-type: none;
+  padding: 0 24px;
+}
+.pages_header .navbar .nav_container .nav_right .nav_collapse .nav_item .nav_link {
+  text-decoration: none;
+  color: #f6f8fc;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.17px;
+}
+.pages_header .navbar .nav_container .nav_right .nav_collapse .nav_item .nav_link:active {
+  color: #ffca42;
+}
+.pages_header .navbar .nav_container .nav_right .nav_collapse .nav_item .nav_order {
+  font-family: "Cardo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: 0.57px;
+  text-transform: capitalize;
+  padding: 18px 52px;
+  background: #ffca42;
+  border: 2px solid #ffca42;
+  margin: 22px 0;
+}
+.pages_header .header_content {
+  padding-top: 209px;
+  padding-bottom: 100px;
+}
+.pages_header .header_content .container .header_category .category_left .d-flex .line_yellow, .pages_header .header_content .container .header_category .category_left .btn_group .line_yellow, .pages_header .header_content .container .header_category .category_left .navbar .nav_container .line_yellow, .pages_header .navbar .header_content .container .header_category .category_left .nav_container .line_yellow, .pages_header .navbar .nav_container .header_content .container .header_category .category_left .nav_left .line_yellow, .pages_header .navbar .nav_container .nav_left .header_content .container .header_category .category_left .icon_group .line_yellow, .pages_header .navbar .nav_container .nav_right .header_content .container .header_category .category_left .nav_collapse .line_yellow, .pages_header .header_content .container .header_category .category_left .header_category .line_yellow {
+  width: 35px;
+  height: 10px;
+  color: #ffca42;
+}
+.pages_header .header_content .container .header_category .category_left .d-flex h3, .pages_header .header_content .container .header_category .category_left .btn_group h3, .pages_header .header_content .container .header_category .category_left .navbar .nav_container h3, .pages_header .navbar .header_content .container .header_category .category_left .nav_container h3, .pages_header .navbar .nav_container .header_content .container .header_category .category_left .nav_left h3, .pages_header .navbar .nav_container .nav_left .header_content .container .header_category .category_left .icon_group h3, .pages_header .navbar .nav_container .nav_right .header_content .container .header_category .category_left .nav_collapse h3, .pages_header .header_content .container .header_category .category_left .header_category h3 {
+  font-family: "Cardo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 36px;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.pages_header .header_content .container .header_category .category_left h1 {
+  font-family: "Cardo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78px;
+  letter-spacing: 1.3px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.pages_header .header_content .container .header_category .category_left p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #b4c7e7;
+  width: 550px;
+  margin-bottom: 42px;
+}
+.pages_header .header_content .container .header_category .category_left .btn_group .category_btn {
+  font-family: "Cardo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: 0.57px;
+  text-transform: capitalize;
+  padding: 18px 52px;
+  background: #ffca42;
+  border: 2px solid #ffca42;
+  margin-right: 20px;
+}
+.pages_header .header_content .container .header_category .category_left .btn_group .link_btn {
+  padding: 18px 32px;
+  border: none;
+  background: none;
+}
+.pages_header .header_content .container .header_category .category_left .btn_group .link_btn a {
+  color: #ffffff;
+  font-family: "Cardo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0.38px;
+  text-transform: capitalize;
+}/*# sourceMappingURL=style.css.map */

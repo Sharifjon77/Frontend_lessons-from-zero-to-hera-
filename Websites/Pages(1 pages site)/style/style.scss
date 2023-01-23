@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1b3764;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+$colorWhite: #ffffff;
+$colorYellow: #ffca42;
+$silverLight: #f6f8fc;
+$blueLight: #b4c7e7;
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.d-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin btn_global($colorBtnt) {
+  font-family: "Cardo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: 0.57px;
+  text-transform: capitalize;
+  padding: 18px 52px;
+  background: $colorBtnt;
+  border: 2px solid $colorBtnt;
+}
+.pages_header {
+  .navbar {
+    position: fixed;
+    width: 100%;
+
+    .nav_container {
+      max-width: 1300px;
+      margin: 0 auto;
+      @extend .d-flex;
+      justify-content: space-between;
+
+      .nav_left {
+        @extend .d-flex;
+
+        .nav_logo {
+          width: 119px;
+          height: 35px;
+          margin-right: 25px;
+        }
+
+        .icon_group {
+          @extend .d-flex;
+
+          .white_box {
+            width: 45px;
+            height: 45px;
+            background: $colorWhite;
+            border: 2px solid $colorWhite;
+            margin-left: 10px;
+            @extend .d-center;
+          }
+        }
+      }
+
+      .nav_right {
+        .nav_collapse {
+          @extend .d-flex;
+
+          .nav_item {
+            list-style-type: none;
+            padding: 0 24px;
+
+            .nav_link {
+              text-decoration: none;
+              color: $silverLight;
+              font-size: 17px;
+              line-height: 26px;
+              letter-spacing: 0.17px;
+
+              &:active {
+                color: $colorYellow;
+              }
+            }
+
+            .nav_order {
+              @include btn_global($colorYellow);
+              margin: 22px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header_content {
+    padding-top: 209px;
+    padding-bottom: 100px;
+    .container {
+      .header_category {
+        @extend .d-flex;
+
+        .category_left {
+          .d-flex {
+            .line_yellow {
+              width: 35px;
+              height: 10px;
+              color: $colorYellow;
+            }
+            h3 {
+              font-family: "Cardo";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 21px;
+              line-height: 36px;
+              letter-spacing: 1.2px;
+              text-transform: capitalize;
+              color: $colorWhite;
+              margin-bottom: 10px;
+            }
+          }
+          h1 {
+            font-family: "Cardo";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 78px;
+            letter-spacing: 1.3px;
+            color: $colorWhite;
+            margin-bottom: 24px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 28px;
+            color: $blueLight;
+            width: 550px;
+            margin-bottom: 42px;
+          }
+
+          .btn_group {
+            @extend .d-flex;
+
+            .category_btn {
+              @include btn_global($colorYellow);
+              margin-right: 20px;
+            }
+            .link_btn {
+              padding: 18px 32px;
+              border: none;
+              background: none;
+
+              a {
+                color: $colorWhite;
+                font-family: "Cardo";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 30px;
+                letter-spacing: 0.38px;
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
